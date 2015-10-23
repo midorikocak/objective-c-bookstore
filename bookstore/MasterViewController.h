@@ -9,11 +9,12 @@
 #import <UIKit/UIKit.h>
 
 @class DetailViewController;
+@class Bookstore;
 
 @interface MasterViewController : UITableViewController
 
 @property (strong, nonatomic) DetailViewController *detailViewController;
-
+@property (strong, nonatomic) Bookstore *myBookStore;
 
 @end
 

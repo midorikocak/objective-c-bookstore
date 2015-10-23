@@ -9,12 +9,6 @@
 #import "Book.h"
 
 @implementation Book
-- (NSString *) title{
-    return title;
-}
--(void)setTitle:(NSString *)newTitle{
-    if ([newTitle length]>0) {
-        title = newTitle;
-    }
-}
+@synthesize title,author,description;
+
 @end

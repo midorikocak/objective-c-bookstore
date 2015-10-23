@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		E3096A5C1BDA7E6300563137 /* Book.m in Sources */ = {isa = PBXBuildFile; fileRef = E3096A5B1BDA7E6300563137 /* Book.m */; settings = {ASSET_TAGS = (); }; };
+		E3096A5F1BDA863500563137 /* Bookstore.m in Sources */ = {isa = PBXBuildFile; fileRef = E3096A5E1BDA863500563137 /* Bookstore.m */; settings = {ASSET_TAGS = (); }; };
 		E3D7CBEA1BDA3B4A0082C344 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7CBE91BDA3B4A0082C344 /* main.m */; };
 		E3D7CBED1BDA3B4A0082C344 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7CBEC1BDA3B4A0082C344 /* AppDelegate.m */; };
 		E3D7CBF01BDA3B4A0082C344 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7CBEF1BDA3B4A0082C344 /* MasterViewController.m */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		E3096A5A1BDA7E6300563137 /* Book.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Book.h; path = bookstore/Book.h; sourceTree = "<group>"; };
 		E3096A5B1BDA7E6300563137 /* Book.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Book.m; path = bookstore/Book.m; sourceTree = "<group>"; };
+		E3096A5D1BDA863500563137 /* Bookstore.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Bookstore.h; path = bookstore/Bookstore.h; sourceTree = "<group>"; };
+		E3096A5E1BDA863500563137 /* Bookstore.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Bookstore.m; path = bookstore/Bookstore.m; sourceTree = "<group>"; };
 		E3D7CBE51BDA3B4A0082C344 /* bookstore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = bookstore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D7CBE91BDA3B4A0082C344 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		E3D7CBEB1BDA3B4A0082C344 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -90,6 +93,8 @@
 		E3D7CBDC1BDA3B4A0082C344 = {
 			isa = PBXGroup;
 			children = (
+				E3096A5D1BDA863500563137 /* Bookstore.h */,
+				E3096A5E1BDA863500563137 /* Bookstore.m */,
 				E3D7CC1E1BDA3B860082C344 /* Customer.h */,
 				E3096A5A1BDA7E6300563137 /* Book.h */,
 				E3096A5B1BDA7E6300563137 /* Book.m */,
@@ -291,6 +296,7 @@
 				E3D7CBF31BDA3B4A0082C344 /* DetailViewController.m in Sources */,
 				E3096A5C1BDA7E6300563137 /* Book.m in Sources */,
 				E3D7CC201BDA3B860082C344 /* Customer.m in Sources */,
+				E3096A5F1BDA863500563137 /* Bookstore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

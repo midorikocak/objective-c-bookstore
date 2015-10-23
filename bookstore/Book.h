@@ -9,12 +9,10 @@
 #import <Foundation/Foundation.h>
 
 @interface Book : NSObject{
-    NSString *title;
-    NSString *author;
-    NSString *description;
 }
 
-- (NSString *) title;
-- (void) setTitle:(NSString *)newTitle;
+@property(nonatomic,strong) NSString *title;
+@property(nonatomic,strong) NSString *author;
+@property(nonatomic,strong) NSString *description;
 
 @end
