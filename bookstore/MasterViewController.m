@@ -13,28 +13,27 @@
 
 @interface MasterViewController ()
 
-@property NSMutableArray *objects;
 @end
 
 @implementation MasterViewController
 @synthesize detailViewController = _detailViewController;
 @synthesize myBookStore;
 
--(id) initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
-{
-    self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
+- (void)viewDidLoad {
+    
+    [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+    
+    if (!self.myBookStore) {
+        self.myBookStore = [[Bookstore alloc] init];
+    }
+    
     if(self){
         self.title = NSLocalizedString(@"Master", @"Master");
         // Overridden method for this line:
         self.myBookStore = [[Bookstore alloc] init];
     }
-    return self;
-}
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
@@ -85,11 +84,15 @@
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-    cell.textLabel.text = [self.myBookStore bookAtIndex:indexPath.row].title;
+    static NSString *CellIdentifier = @"Cell";
     
-    NSDate *object = self.objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
+    if(cell == nil){
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier];
+        cell.accessoryType = UITableViewCellAccessoryDisclosureIndicator;
+    }
+    
+    cell.textLabel.text = [self.myBookStore bookAtIndex:indexPath.row].title;
     return cell;
 }
 

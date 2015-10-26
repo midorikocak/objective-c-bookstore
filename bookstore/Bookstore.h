@@ -11,6 +11,6 @@
 
 @interface Bookstore : NSObject
 @property(strong,nonatomic) NSMutableArray *theBookStore;
--(NSInteger)count;
+- (NSInteger)count;
 - (Book *) bookAtIndex:(NSUInteger)index;
 @end

@@ -18,7 +18,6 @@
 		E3D7CBFB1BDA3B4A0082C344 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E3D7CBF91BDA3B4A0082C344 /* LaunchScreen.storyboard */; };
 		E3D7CC061BDA3B4A0082C344 /* bookstoreTests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7CC051BDA3B4A0082C344 /* bookstoreTests.m */; };
 		E3D7CC111BDA3B4A0082C344 /* bookstoreUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7CC101BDA3B4A0082C344 /* bookstoreUITests.m */; };
-		E3D7CC201BDA3B860082C344 /* Customer.m in Sources */ = {isa = PBXBuildFile; fileRef = E3D7CC1F1BDA3B860082C344 /* Customer.m */; settings = {ASSET_TAGS = (); }; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,8 +60,6 @@
 		E3D7CC0C1BDA3B4A0082C344 /* bookstoreUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = bookstoreUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E3D7CC101BDA3B4A0082C344 /* bookstoreUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = bookstoreUITests.m; sourceTree = "<group>"; };
 		E3D7CC121BDA3B4A0082C344 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E3D7CC1E1BDA3B860082C344 /* Customer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Customer.h; path = bookstore/Customer.h; sourceTree = "<group>"; };
-		E3D7CC1F1BDA3B860082C344 /* Customer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Customer.m; path = bookstore/Customer.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,10 +92,8 @@
 			children = (
 				E3096A5D1BDA863500563137 /* Bookstore.h */,
 				E3096A5E1BDA863500563137 /* Bookstore.m */,
-				E3D7CC1E1BDA3B860082C344 /* Customer.h */,
 				E3096A5A1BDA7E6300563137 /* Book.h */,
 				E3096A5B1BDA7E6300563137 /* Book.m */,
-				E3D7CC1F1BDA3B860082C344 /* Customer.m */,
 				E3D7CBE71BDA3B4A0082C344 /* bookstore */,
 				E3D7CC041BDA3B4A0082C344 /* bookstoreTests */,
 				E3D7CC0F1BDA3B4A0082C344 /* bookstoreUITests */,
@@ -295,7 +290,6 @@
 				E3D7CBEA1BDA3B4A0082C344 /* main.m in Sources */,
 				E3D7CBF31BDA3B4A0082C344 /* DetailViewController.m in Sources */,
 				E3096A5C1BDA7E6300563137 /* Book.m in Sources */,
-				E3D7CC201BDA3B860082C344 /* Customer.m in Sources */,
 				E3096A5F1BDA863500563137 /* Bookstore.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
