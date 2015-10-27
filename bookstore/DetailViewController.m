@@ -7,6 +7,7 @@
 //
 
 #import "DetailViewController.h"
+#import "Book.h"
 
 @interface DetailViewController ()
 
@@ -28,7 +29,10 @@
 - (void)configureView {
     // Update the user interface for the detail item.
     if (self.detailItem) {
-        
+        Book *theBook = (Book *)self.detailItem;
+        self.titleLabel.text = theBook.title;
+        self.authorLabel.text = theBook.author;
+        self.descriptionTextView.text = theBook.description;
     }
 }
 
